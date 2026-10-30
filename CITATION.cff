@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Selective filters: reference implementation and closed-form Odd-Even smoother"
+authors:
+  - family-names: Berangi
+    given-names: Reza
+version: 0.1.0
+date-released: 2026-10-30
+license: MIT
+keywords:
+  - smoothing
+  - binomial filter
+  - multiplier-free FIR design
+  - Gaussian smoothing

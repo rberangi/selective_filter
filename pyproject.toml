@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "selective-filters"
+version = "0.1.0"
+description = "Selective filters and the closed-form, multiplier-free Odd-Even smoother"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Reza Berangi" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+keywords = ["smoothing", "FIR filter", "binomial filter", "multiplier-free", "Gaussian smoothing", "signal processing"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.optional-dependencies]
+examples = ["scipy>=1.10", "matplotlib>=3.7", "jupyter"]
+test = ["pytest>=7"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/selective_filters"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
